@@ -5,12 +5,15 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Menu from "./pages/Menu";
 import NoPage from "./pages/NoPage"
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 
 
 function App() {
   return (
     <>
+    <Provider store={store}>
      <BrowserRouter>    
      <Routes>     
         <Route index path="/" element={<Home />}/>
@@ -20,6 +23,7 @@ function App() {
         <Route path="*" element={<NoPage />} />        
       </Routes>     
      </BrowserRouter>
+    </Provider>
     </>
   );
 }
