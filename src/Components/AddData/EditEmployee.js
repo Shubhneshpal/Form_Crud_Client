@@ -27,7 +27,7 @@ const CustomerForm = () => {
     adress: "",
     file: " ",
   });
-  const [errors, setErrors] = useState({});
+  // const [errors, setErrors] = useState({});
 
   useEffect(() => {
     if (location?.state?.data) {
@@ -42,7 +42,7 @@ const CustomerForm = () => {
         file: location?.state?.data.file,
       });
     }
-  }, []);
+  }, []); 
 
   // console.log('getData',getData)
   // console.log(formData);
@@ -58,21 +58,8 @@ const CustomerForm = () => {
   };
 
   const handleSubmitFrom = async (e) => {
-    e.preventDefault();
-    // const newErrors = validateForm(formData);
-    // setErrors(newErrors);
-
-    // const isValid = Object.keys(newErrors).length === 0;
-    // if (isValid) {
-    //   const Data = new FormData();
-    //   Data.append("Fname", formData.Fname);
-    //   Data.append("Lname", formData.Lname);
-    //   Data.append("email", formData.email);
-    //   Data.append("password", formData.password);
-    //   Data.append("MobileNo", formData.MobileNo);
-    //   Data.append("adress", formData.adress);
-    //   Data.append("file", formData.file);
-    console.log("formData 48", formData);
+    e.preventDefault();  
+    
 
     try {
       const response = await fetch(
@@ -106,8 +93,8 @@ const CustomerForm = () => {
       file: null,
     });
 
-    Navigate('/employee');
-    // }
+    Navigate('/');
+    
   };
 
   return (

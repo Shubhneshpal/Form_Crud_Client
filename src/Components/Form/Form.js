@@ -57,6 +57,7 @@ const CustomerForm = () => {
 
     console.log("formData 48", formData.Fname);
     console.log("formData 48", formData.file);
+    console.log("formData 48", formData.adress);
 
     try {
       const response = await axios.post(
@@ -75,7 +76,7 @@ const CustomerForm = () => {
             alert("Uploaded Successfully!!!");
             // getPdf();
           }
-          navigate('/employee')
+          navigate('/')
      
     } catch (error) {
       alert(error.response.data.error)
@@ -100,7 +101,7 @@ const CustomerForm = () => {
   return (
     <>
     <div className="addEmploye">
-        <Link to={"/employee"}><button className='btn01'>View Employee</button></Link>
+        <Link to={"/"}><button className='btn01'>View Employee</button></Link>
     </div>
       <div className="main-wraper-form">
       

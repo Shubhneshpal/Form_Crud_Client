@@ -9,7 +9,7 @@ function App() {
     <>
      <BrowserRouter>
       <Routes>
-        <Route path="/employee"  element={<Employe />} />
+        <Route path="/"  element={<Employe />} />
         <Route path='/form'  element={<CustomerForm />} />
         <Route path='/edit/form'  element={<EditEmployee />} />
           {/* <Route path="blogs" element={<Blogs />} />
