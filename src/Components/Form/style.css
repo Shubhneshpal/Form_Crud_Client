@@ -53,6 +53,92 @@
 .btn00{
     margin-left: 10px;
 }
+/* // chatApp is here ✍️ 👩‍🚒 */
+.chatApp {
+    display: flex;
+    justify-content: center;
+    background-color: #f5deb3cc;
+    margin: 2rem auto;
+    width: 56%;
+    padding: 2rem;
+    border-radius: 20px;
+}
+.chat_withName input{
+    outline: none;
+    border: 1px solid rgba(36, 31, 31, 0.285);
+    border-radius: 10px;
+    text-align: start;
+    margin-right: 15px;
+    padding: 4px 10px;
+    /* width: 33%; */
+}
+.chat_withName button{
+    border: none;
+    background-color: rgb(98, 215, 98);
+    color: white;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+.main-getdata{
+    margin-bottom: 1rem;
+    width: 53vw;
+    height: 55vh;
+}
+.imgOrText {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.imgOrText h3 {
+    background-color: aliceblue;
+    padding: 4px 11px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.msg {
+    background-color: white;
+    padding: 5px 12px;
+    border-radius: 16px;
+    margin-left: 5px; 
+}
+.msg h5 {
+    margin-bottom: 0rem;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.msg p {
+    margin-bottom: 0rem;
+    font-size: 10px;
+    text-align: end;
+    font-weight: 400;
+}
+.openPage h1{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+/* .main-getdata {
+    margin-bottom: 1rem;
+    width: 76vw;
+    height: 55vh;
+} */
+form.chat_withName {
+    text-align: center;
+}
+.openPage {
+    width: 53vw;
+}
+.usermargin{
+    margin-left: auto;
+    width: fit-content;
+}
+
+
+
+/* // chatApp is here ✍️ 👩‍🚒 */
+
+
 
 
 
